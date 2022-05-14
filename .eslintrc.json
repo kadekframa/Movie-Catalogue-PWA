@@ -12,5 +12,10 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-extra-semi": "off",
+        "no-console": "off",
+        "no-underscore-dangle": "off",
+        "indent": "off",
+        "linebreak-style": "off"
     }
 }
