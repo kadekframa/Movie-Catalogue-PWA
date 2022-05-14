@@ -1,3 +1,5 @@
+import TheMovieDbSource from '../../data/themoviedb-source';
+
 const NowPlaying = {
     async render() {
       return `
@@ -6,7 +8,9 @@ const NowPlaying = {
     },
 
     async afterRender() {
-      // Fungsi ini akan dipanggil setelah render()
+      // Fungsi ini akan dipanggil setelah render().
+      const movies = await TheMovieDbSource.nowPlayingMovies();
+      console.info(movies);
     },
   };
 
