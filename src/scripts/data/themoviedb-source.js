@@ -13,10 +13,10 @@ class TheMovieDbSource {
         return responseJson.results;
     }
 
-    static async detailMovies(id) {
+    static async detailMovie(id) {
         const response = await fetch(API_ENDPOINT.DETAIL(id));
         return response.json();
-    }
+      }
 }
 
 export default TheMovieDbSource;
